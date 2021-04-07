@@ -12,3 +12,8 @@ jobs:
         run: |
           java -version
           git --version
+      - name: pythoncommand
+        run:  |
+          import platform
+          print(platform.processor())
+        shell: python
